@@ -5,6 +5,7 @@ import {
   MdRemoveCircleOutline,
 } from 'react-icons/md';
 import cn from 'classnames';
+import React from 'react';
 
 const TodoListItem = ({ todo, onRemove, onToggle }) => {
   const { text, checked, id } = todo;
@@ -23,4 +24,4 @@ const TodoListItem = ({ todo, onRemove, onToggle }) => {
   )
 }
 
-export default TodoListItem;
+export default React.memo(TodoListItem);
